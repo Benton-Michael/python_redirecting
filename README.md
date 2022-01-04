@@ -1,0 +1,2 @@
+# python_redirecting
+Using Python's built in redirect method. The /show app.route now includes the show user() method. This method demonstrates the importance of never rendering a template on a POST request. Rather, after processing the POST data, a GET request is performed on behalf of the client. This now serves as the request that is completed SHOULD the client refresh the page. Again - Always redirect after handing POST data in order to avoid that data being handled more than once!
